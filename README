@@ -1,0 +1,30 @@
+-------------------------------Assignment Detail----------------------------------------
+* Assignment# 7
+* name: Ajay Sundar Karuppasamy, Manu Khandelwal
+* student id: 5298653, 5272109
+* x500 id: karup002, khand055
+* CSELABS machine: csel-x13-umh.cselabs.umn.edu
+*/
+
+
+------------------------How to compile--------------------------
+
+1. Unzip the tar file to a directory and run 'make' command. This make will run the makefile present in folder consumer, producer and scullbuffer and create all the binaries necessary. The make in scullbuffer will do the necessary loading and unloading of the scull device.
+
+
+
+-----------------------How to run the test-----------------------------------------
+
+1. Run 'sudo ./alltestcases.sh' at the project directory. This will one by one call all the 5 test cases. Necessary console logging is done to show which producer is producing item and which consumer is consuming item. At the end of each test, total number of items produced and consumed by producer and consumer respectively are logged along with successful completion of the test case.
+
+
+Note: 
+Behind the scene, producer and consumers are called. 
+
+Producer takes 2 arguments: 
+1. Number of items it will produce.
+2. Color of the item it will produce. 
+
+Consumer takes 2 argument:
+1. Number of items it will consume.
+2. Name of the consumer
